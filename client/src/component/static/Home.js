@@ -63,7 +63,7 @@ function Home(props)
             <div className='card'>
                 <CardDeck>
                     <Card>
-                        <Card.Img variant="top" src={image44} width='50px' height='160px'/>
+                        <Card.Img variant="top" src={image66} width='50px' height='160px'/>
                         <Card.Body>
                             <Card.Title style={{fontFamily:'arial'}}><b>SPA</b></Card.Title>
                             <Card.Text>
@@ -87,7 +87,7 @@ function Home(props)
                         </Card.Footer>
                     </Card>
                     <Card>
-                        <Card.Img variant="top" src={image66} width='50' height='160'/>
+                        <Card.Img variant="top" src={image44} width='50' height='160'/>
                         <Card.Body>
                             <Card.Title><b>RESTAURANTS</b></Card.Title>
                             <Card.Text>
