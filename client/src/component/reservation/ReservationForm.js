@@ -63,25 +63,6 @@ class ReservationForm extends React.Component{
         this.setState({gender})
     }
 
-    componentDidMount(){
-        axios.get('/departments',{headers:{'x-auth':localStorage.getItem('authToken')}})
-        .then(response=>{
-            const department = response.data
-            let dept = []
-            department.map(department=>{
-                return (
-                    dept.push({
-                        id: department._id,
-                        value: department._id,
-                        label: department.department_name,
-                        courseId: department.course._id,
-                    })
-                )
-            })
-            this.setState({dept})
-        })
-    }
-
     render(){
         return(
             <div className="fluid-container" style={{height:"100%", width: "100%",backgroundColor:" red",backgroundImage:"linear-gradient(#F4F8F9,#B7F4C9,#E4C4F9)"}}>
